@@ -1,4 +1,11 @@
 ---
+  
+  # chris budzilowicz
+# Docs demo example - Create user "Docs" and memberof "EvmGroup-users" in CloudForms.
+---
+- hosts: localhost
+
+tasks:
 - name: Create DRO entry
    uri:
      url: "{{ manageiq.api_url }}/api/generic_objects"
